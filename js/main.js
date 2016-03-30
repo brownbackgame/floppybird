@@ -53,7 +53,7 @@ buzz.all().setVolume(volume);
 var loopGameloop;
 var loopPipeloop;
 
-var images = ['bird.png', 'jayhawk.png', 'wushock.png'];
+var images = ['bird.png', 'jayhawk.png', 'wushock.png','fh.png'];
 
 $(document).ready(function() {
    if(window.location.search == "?debug")
