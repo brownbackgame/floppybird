@@ -53,6 +53,8 @@ buzz.all().setVolume(volume);
 var loopGameloop;
 var loopPipeloop;
 
+var images = ['bird.png', 'jayhawk.png', 'wushock.png'];
+
 $(document).ready(function() {
    if(window.location.search == "?debug")
       debugmode = true;
@@ -91,6 +93,8 @@ function setCookie(cname,cvalue,exdays)
 function showSplash()
 {
    currentstate = states.SplashScreen;
+   
+   $('.bird').css({'background-image': 'url(assets/' + images[Math.floor(Math.random() * images.length)] + ')'});
    
    //set the defaults (again)
    velocity = 0;
